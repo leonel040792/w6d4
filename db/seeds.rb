@@ -7,5 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-leon = User.create( :name => "leon", :email => "whatever")
-victor = User.create( name: 'victor', email: "yea")
+# leon = User.create( username: 'Leon')
+# victor = User.create( username: "bobo")
+anna = User.create( username: "Anna")
+mia = User.create( username: 'Mia')
+mike = User.create( username: "Mike")
+
+Artwork.create( title: "Sea", image_url: "idk", artist_id: 1)
+Artwork.create( title: "Land", image_url: "idk", artist_id: 2)
+
+ArtworkShare.create( artwork_id: 2, viewer_id: 1)
+ArtworkShare.create( artwork_id: 1, viewer_id: 2)
+ArtworkShare.create( artwork_id: 1, viewer_id: 3)
+ArtworkShare.create( artwork_id: 1, viewer_id: 5)
+ArtworkShare.create( artwork_id: 2, viewer_id: 5)
